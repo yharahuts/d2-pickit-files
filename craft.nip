@@ -1,0 +1,49 @@
+// ##### Helms #########################
+[Type] == helm && [Quality] == crafted # [LifeLeech] >= 3 && ( [Sockets] >= 2 || [ItemToHitPercentPerLevel] >= 1 ) && [ItemDeadlyStrike] >= 5 && [FHR] >= 10 && ([EnhancedDefense] >= 120 || [MaxHP] >= 45)
+[Type] == helm && [Quality] == crafted # [LifeLeech] >= 4 && [Sockets] >= 0 && [ItemDeadlyStrike] >= 10 && [FHR] >= 10 && ([EnhancedDefense] >= 120 || [MaxHP] >= 45)
+
+[Type] == helm && [Quality] == crafted # [LifeLeech] >= 1
+
+// ##### Armor #########################
+
+// ##### Shields #######################
+[Name] == Monarch && [Quality] == crafted # [Sockets] >= 2 && [FBR] >= 15 && (([FireResist] >= 15 && [LightResist] >= 15) || [FHR] >= 10)
+
+// ##### Gloves ########################
+[Type] == gloves && [Quality] == crafted # [ItemKnockBack] >= 1 && [ItemAddSkillTab] >= 2 && ( [IAS] >= 20 || [Strength] + [Dexterity] >= 6 ) && ( [LifeLeech] >= 3 || [ManaLeech] >= 3 )
+[Type] == gloves && [Quality] == crafted # [ItemKnockBack] >= 1 && [ItemAddSkillTab] >= 2 && [IAS] >= 20 && [Strength]+[Dexterity] >= 6
+
+[Type] == gloves && [Quality] == crafted # [ItemCrushingBlow] >= 5 && [LifeLeech] >= 3 && [IAS] >= 20 && ([Strength] + [Dexterity] >= 6)
+[Type] == gloves && [Quality] == crafted # [ItemCrushingBlow] >= 5 && [LifeLeech] >= 3 && [Strength]+[Dexterity] >= 15
+
+[Type] == gloves && [Quality] == crafted # [MaxMana] >= 60 && [itemmanaafterkill] >= 3
+
+// ##### Boots #########################
+[Type] == boots && [Quality] == crafted # [LifeLeech] >= 1 && [FRW] >= 30 && [FHR] >= 10 && [FireResist]+[LightResist]+[ColdResist]+[PoisonResist] >= 15
+[Type] == boots && [Quality] == crafted # [LifeLeech] >= 1 && [FRW] >= 30 && [FHR] >= 10 && [FireResist] >= 20
+
+[Type] == boots && [Quality] == crafted # [MaxMana] >= 45 && [FRW] >= 30 && [FHR] >= 10 && [FireResist]+[LightResist]+[ColdResist]+[PoisonResist] >= 15
+[Type] == boots && [Quality] == crafted # [MaxMana] >= 45 && [FRW] >= 30 && [FHR] >= 10 && [FireResist] >= 20
+
+[Type] == boots && [Quality] == crafted # [FRW] >= 30 && [FHR] >= 10 && [FireResist]+[LightResist]+[ColdResist]+[PoisonResist] >= 45
+
+// ##### Belts #########################
+[Type] == belt && [Quality] == crafted # [ItemOpenWounds] >= 5 && [LifeLeech] >= 1 && [FHR] >= 24 && [Strength] >= 15 && ([MaxHP] >= 50 || [ItemGoldBonus] >= 50)
+[Type] == belt && [Quality] == crafted # [ItemOpenWounds] >= 5 && [LifeLeech] >= 1 && [FHR] >= 24 && [Strength] >= 15 && ([MaxHP] >= 50 || [ItemGoldBonus] >= 50)
+
+[Type] == belt && [Quality] == crafted # [FCR] >= 5 && [MaxMana] >= 45 && [FHR] >= 24 && [Strength] >= 10 && [MaxHP] >= 30 
+[Type] == belt && [Quality] == crafted # [FCR] >= 10 && [MaxMana] >= 35 && [FHR] >= 17 && [Strength] >= 10 && [MaxHP] >= 30 
+
+// ##### Rings #########################
+[Type] == ring && [Quality] == crafted # [FCR] >= 10
+[Type] == ring && [Quality] == crafted # [LifeLeech] >= 1 && [ToHit] >= 30 && [FireResist]+[LightResist]+[ColdResist]+[PoisonResist] >= 15 && ([Strength] >= 5 || [Dexterity] >= 0 || [ManaLeech] >= 4 || [FCR] >= 10)
+
+// ##### Amulets #######################
+[Type] == amulet && [Quality] == crafted # [FRW] >= 10 && [FCR] >= 10
+[Type] == amulet && [Quality] == crafted # [FCR] >= 20
+[Type] == amulet && [Quality] == crafted # [ItemAddClassSkills] >= 2
+
+//[Type] == amulet && [Quality] == crafted # [FCR] >= 15 && [ItemAddClassSkills] >= 2 && [FireResist]+[LightResist]+[ColdResist]+[PoisonResist] >= 50 && ([MaxMana] >= 80 || [MaxHP] >= 30 || [Strength] >= 15 || [Dexterity] >= 5)
+//[Type] == amulet && [Quality] == crafted # [LifeLeech] >= 7 && [ItemAddClassSkills] >= 2 && [FireResist]+[LightResist]+[ColdResist]+[PoisonResist] >= 50 && ([ManaLeech] >= 6 || [MaxHP] >= 50 || [Strength] >= 15 || [Dexterity] >= 5)
+//[Type] == amulet && [Quality] == crafted # [LifeLeech] >= 7 && [ItemAddClassSkills] >= 2 && [Strength]+[Dexterity] >= 30
+//[Type] == amulet && [Quality] == crafted # [ToBlock] >= 5 && [ItemAddClassSkills] >= 2 && [FireResist]+[LightResist]+[ColdResist]+[PoisonResist] >= 50 && ([LifeLeech] >= 4 || [ManaLeech] >= 6 || [MaxHP] >= 30 || [Strength] >= 15 || [Dexterity] >= 5)

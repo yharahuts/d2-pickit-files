@@ -1,0 +1,141 @@
+// use this to test if shop bot is working if you think there is a problem
+// also note there are a lot of diplicates in this file so mod to your liking
+// [Type] == Armor && [Quality] == Magic
+
+//=============================================================
+//************ Claws ******************************************
+//=============================================================
+
+( [Type] == HandToHand || [Type] == AssassinClaw ) && [Class] == elite && [Quality] == Magic # [ItemToHitPerLevel] >= 16 && [IAS] >= 40
+( [Type] == HandToHand || [Type] == AssassinClaw ) && [Quality] == Magic # ( [AssassinSkills] == 2 || [ItemAddTrapsSkillTab] == 3 ) && [SkillLightningSentry] == 3
+
+[Name] == GreaterClaws && [Quality] == Magic # [AssassinSkills]+[SkillLightningSentry] == 5 || [TrapsSkillTab]+[SkillLightningSentry] == 6
+[Name] == GreaterTalons && [Quality] == Magic # [Sockets] == 3 && [IAS] == 40 && [SkillLightningSentry] >= 3
+
+( [Type] == HandToHand || [Type] == AssassinClaw ) && [Quality] == Magic # ( [ItemAddTrapsSkillTab] == 2 || [itemaddshadowdisciplinesskilltab] == 3 ) && ( [skillburstofspeed] + [SkillFade] + [SkillVenom] + [SkillShadowMaster] + [skillburstofspeed] + [SkillShadowMaster] >= 6 )
+( [Type] == HandToHand || [Type] == AssassinClaw ) && [Quality] == Magic # ( [ItemAddTrapsSkillTab] == 2 || [itemaddshadowdisciplinesskilltab] == 3 ) && ( [skillburstofspeed] >= 3 || [SkillFade] >= 3 || [SkillVenom] >= 3 || [SkillShadowMaster] >= 3 || [skillburstofspeed] >= 3 || [SkillShadowMaster] >= 3 )
+
+//=============================================================
+//************ Armor and Shields ******************************
+//=============================================================
+
+[Type] == Armor && [Quality] == Magic # [MaxHP] >= 100 && [Sockets] == 4
+//[Type] == Armor && [Quality] == Magic # [FHR] >= 24 && [Sockets] == 4
+[Type] == Armor && [Quality] == Magic # [Sockets] == 3 && [MaxHP] >= 80 && [ItemLevelReq] <= 30
+
+//[Type] == Shield && [Quality] == Magic # [PaliCombatSkillTab] == 3 && ( [FBR] == 30 || [MaxHP] >= 60 )
+//[Type] == Shield && [Quality] == Magic # [Sockets] == 3 && [FBR] == 30 && [ItemLevelReq] <= 30
+[Type] == Shield && [Quality] == Magic # [Sockets] == 4 && [FBR] == 30
+
+[name] == BreastPlate && [quality] == superior && [flag] != ethereal # [sockets] == 3 && [enhanceddefense] == 15 && [itemmaxdurabilitypercent] == 15
+[name] == RingMail && [quality] == superior && [flag] != ethereal # [sockets] == 3 && [enhanceddefense] == 15 && [itemmaxdurabilitypercent] == 15
+[type] == Armor && [quality] == superior && [flag] != ethereal # [sockets] == 3 && [enhanceddefense] == 15 && [itemmaxdurabilitypercent] == 15
+
+//=============================================================
+//************ Gloves, Boots, Belts ***************************
+//=============================================================
+
+[Type] == Gloves && [Quality] == Magic # [IAS] == 20 && [JavelinAndSpearSkillTab] == 3
+[Type] == Gloves && [Quality] == Magic # [IAS] == 20 && [BowAndCrossbowSkillTab] == 3
+
+[Type] == Gloves && [Quality] == Magic # ( [Dexterity] >= 20 || [Strength] >= 15 ) && [JavelinAndSpearSkillTab] == 3
+[Type] == Gloves && [Quality] == Magic # ( [Dexterity] >= 20 || [Strength] >= 15 ) && [BowAndCrossbowSkillTab] == 3
+[Type] == Gloves && [Quality] == Magic # ( [Dexterity] >= 20 || [Strength] >= 15 ) && ( [FireResist] >= 40 || [ColdResist] >= 40 || [LightResist] >= 40 || [PoisonResist] >= 40 )
+
+[Type] == Boots && [Quality] == Magic # [MaxMana] == 40 && [FRW] == 40
+[Type] == Boots && [Quality] == Magic # [ItemGoldBonus] >= 80 && ( [FireResist] >= 40 || [ColdResist] >= 40 || [LightResist] >= 40 )
+[Type] == Boots && [Quality] == Magic # [MaxMana] >= 40 && ( [FireResist] >= 40 || [ColdResist] >= 40 || [LightResist] >= 40 || [PoisonResist] >= 40 )
+[Type] == Boots && [Quality] == Magic # [FRW] >= 40 && ( [FireResist] >= 40 || [ColdResist] >= 40 || [LightResist] >= 40 || [PoisonResist] >= 40 )
+
+[Type] == Belt && [Quality] == Magic # ( [MaxHP] >= 100 || [Strength] >= 30 || [itemgoldbonus] == 80 ) && ( [FireResist] >= 40 || [ColdResist] >= 40 || [LightResist] >= 40 || [PoisonResist] >= 40 )
+
+//=============================================================
+//************ Wands / Orbs *******************************************
+//=============================================================
+[Type] == Wand && [Quality] == magic # [Necromancerskills] == 2 && [fcr] == 20 && [skillbonespear] == 3
+[Type] == Wand && [Quality] == magic # [Necromancerskills] == 2 && [fcr] == 20 && [skillbonespirit] == 3
+
+// [type] == wand # [itemchargedskill] == 82
+
+[type] == staff # [itemaddfireskilltab] == 3 && [skillenchant] == 3
+
+[type] == scepter # ( [paladinskills] == 2 || [palicombatskilltab] == 3 ) && [skillconcentration] + [skillblessedhammer] == 6
+[type] == scepter # ( [paladinskills] == 2 || [palicombatskilltab] == 3 ) && [skillfistoftheheavens] + [skillconviction] == 6
+[type] == scepter # [palicombatskilltab] + [skillholyshield] == 6
+
+//=============================================================
+//************ BO weaps ***************************************
+//=============================================================
+[Name] == Balancedknife && [Quality] == magic # [warcriesskilltab] == 3 && [maxdamage] >= 11 // Black
+[Name] == Balancedknife && [Quality] == magic # [warcriesskilltab] == 3 && [lifeleech] >= 6 //Red
+[Name] == Balancedknife && [Quality] == magic # [warcriesskilltab] == 3 && [manaleech] >= 6 // Red
+[Name] == Balancedknife && [Quality] == magic # [warcriesskilltab] == 3 && [coldmindam] >= 2 // Blue
+[Name] == Balancedknife && [Quality] == magic # [warcriesskilltab] == 3 && [poisonmindam] >= 1 // Green
+[Name] == Balancedknife && [Quality] == magic # [warcriesskilltab] == 3 && [lightmindam] >= 1 // Yellow
+[Name] == Balancedknife && [Quality] == magic # [warcriesskilltab] == 3 && [strength] >= 30 // Yellow
+[Name] == Balancedknife && [Quality] == magic # [warcriesskilltab] == 3 && [ItemReqPercent] >= 15 // Yellow
+[Name] == Balancedknife && [Quality] == magic # [warcriesskilltab] == 3 && [firemindam] >= 1 // Red
+
+[Name] == crystalsword && [Quality] == magic # [warcriesskilltab] == 3 && [maxdamage] >= 11 // Black
+[Name] == crystalsword && [Quality] == magic # [warcriesskilltab] == 3 && [coldmindam] >= 2 // Blue
+[Name] == crystalsword && [Quality] == magic # [warcriesskilltab] == 3 && [lifeleech] >= 6 // Red
+[Name] == crystalsword && [Quality] == magic # [warcriesskilltab] == 3 && [manaleech] >= 6 // Red
+[Name] == crystalsword && [Quality] == magic # [warcriesskilltab] == 3 && [poisonmindam] >= 1 // Green
+[Name] == crystalsword && [Quality] == magic # [warcriesskilltab] == 3 && [lightmindam] >= 1 // Yellow
+[Name] == crystalsword && [Quality] == magic # [warcriesskilltab] == 3 && [strength] >= 30 // Yellow
+[Name] == crystalsword && [Quality] == magic # [warcriesskilltab] == 3 && [ItemReqPercent] >= 15 // Yellow
+[Name] == crystalsword && [Quality] == magic # [warcriesskilltab] == 3 && [firemindam] >= 1 // Red
+
+[Name] == warsword && [Quality] == magic # [warcriesskilltab] == 3 && [maxdamage] >= 11 // Black
+[Name] == warsword && [Quality] == magic # [warcriesskilltab] == 3 && [coldmindam] >= 2 // Blue
+[Name] == warsword && [Quality] == magic # [warcriesskilltab] == 3 && [lifeleech] >= 6 // Red
+[Name] == warsword && [Quality] == magic # [warcriesskilltab] == 3 && [manaleech] >= 6 // Red
+[Name] == warsword && [Quality] == magic # [warcriesskilltab] == 3 && [poisonmindam] >= 1 // Green
+[Name] == warsword && [Quality] == magic # [warcriesskilltab] == 3 && [lightmindam] >= 1 // Yellow
+[Name] == warsword && [Quality] == magic # [warcriesskilltab] == 3 && [strength] >= 30 // Yellow
+[Name] == warsword && [Quality] == magic # [warcriesskilltab] == 3 && [ItemReqPercent] >= 15 // Yellow
+[Name] == warsword && [Quality] == magic # [warcriesskilltab] == 3 && [firemindam] >= 1 // Red
+
+[Name] == bastardsword && [Quality] == magic # [warcriesskilltab] == 3 && [maxdamage] >= 11 // Black
+[Name] == bastardsword && [Quality] == magic # [warcriesskilltab] == 3 && [coldmindam] >= 2 // Blue
+[Name] == bastardsword && [Quality] == magic # [warcriesskilltab] == 3 && [lifeleech] >= 6 // Red
+[Name] == bastardsword && [Quality] == magic # [warcriesskilltab] == 3 && [manaleech] >= 6 // Red
+[Name] == bastardsword && [Quality] == magic # [warcriesskilltab] == 3 && [poisonmindam] >= 1 // Green
+[Name] == bastardsword && [Quality] == magic # [warcriesskilltab] == 3 && [lightmindam] >= 1 // Yellow
+[Name] == bastardsword && [Quality] == magic # [warcriesskilltab] == 3 && [strength] >= 30 // Yellow
+[Name] == bastardsword && [Quality] == magic # [warcriesskilltab] == 3 && [ItemReqPercent] >= 15 // Yellow
+[Name] == bastardsword && [Quality] == magic # [warcriesskilltab] == 3 && [firemindam] >= 1 // Red
+
+[Type] == axe && [Quality] == magic # [warcriesskilltab] == 3 && [maxdamage] >= 11 // Black
+[Type] == axe && [Quality] == magic # [warcriesskilltab] == 3 && [coldmindam] >= 2 // Blue
+[Type] == axe && [Quality] == magic # [warcriesskilltab] == 3 && [lifeleech] >= 6 // Red
+[Type] == axe && [Quality] == magic # [warcriesskilltab] == 3 && [manaleech] >= 6 // Red
+[Type] == axe && [Quality] == magic # [warcriesskilltab] == 3 && [poisonmindam] >= 1 // Green
+[Type] == axe && [Quality] == magic # [warcriesskilltab] == 3 && [lightmindam] >= 1 // Yellow
+[Type] == axe && [Quality] == magic # [warcriesskilltab] == 3 && [strength] >= 30 // Yellow
+[Type] == axe && [Quality] == magic # [warcriesskilltab] == 3 && [ItemReqPercent] >= 15 // Yellow
+[Type] == axe && [Quality] == magic # [warcriesskilltab] == 3 && [firemindam] >= 1 // Red
+
+[Type] == mace && [Quality] == magic # [warcriesskilltab] == 3 && [maxdamage] >= 11 // Black
+[Type] == mace && [Quality] == magic # [warcriesskilltab] == 3 && [coldmindam] >= 2 // Blue
+[Type] == mace && [Quality] == magic # [warcriesskilltab] == 3 && [lifeleech] >= 6 // Red
+[Type] == mace && [Quality] == magic # [warcriesskilltab] == 3 && [manaleech] >= 6 // Red
+[Type] == mace && [Quality] == magic # [warcriesskilltab] == 3 && [poisonmindam] >= 1 // Green
+[Type] == mace && [Quality] == magic # [warcriesskilltab] == 3 && [lightmindam] >= 1 // Yellow
+[Type] == mace && [Quality] == magic # [warcriesskilltab] == 3 && [strength] >= 30 // Yellow
+[Type] == mace && [Quality] == magic # [warcriesskilltab] == 3 && [ItemReqPercent] >= 15 // Yellow
+[Type] == mace && [Quality] == magic # [warcriesskilltab] == 3 && [firemindam] >= 1 // Red
+
+[name] == Balancedknife && [Quality] == magic # [warcriesskilltab] >= 3		&& ( [Strength] >= 30 || [itemreqpercent] >= 30 )
+[name] == crystalsword && [Quality] == magic # [warcriesskilltab] >= 3		&& ( [Strength] >= 30 || [itemreqpercent] >= 30 )
+[name] == warsword && [Quality] == magic # [warcriesskilltab] >= 3			&& ( [Strength] >= 30 || [itemreqpercent] >= 30 )
+[name] == bastardsword && [Quality] == magic # [warcriesskilltab] >= 3		&& ( [Strength] >= 30 || [itemreqpercent] >= 30 )
+[name] == axe && [Quality] == magic # [warcriesskilltab] >= 3				&& ( [Strength] >= 30 || [itemreqpercent] >= 30 )
+[name] == mace && [Quality] == magic # [warcriesskilltab] >= 3				&& ( [Strength] >= 30 || [itemreqpercent] >= 30 )
+
+//=============================================================
+//************ STUFF ******************************************
+//=============================================================
+[Type] == weapon && [Class] == elite && [Quality] <= Magic # [ItemToHitPerLevel] >= 16 && [IAS] >= 40
+[Type] == weapon && [Class] == elite && [Quality] <= Magic # [ItemToHitPerLevel] >= 16 && [IAS] >= 40
+[Type] == weapon && [Class] == elite && [Quality] <= Magic # [EnhancedDamage] >= 290 && [IAS] >= 40
